@@ -16,7 +16,9 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -48,13 +50,13 @@
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 123455678990
+                Call : +8801555666000
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+                Email : demo@hospital.com
               </span>
             </a>
             <a href="">
@@ -68,7 +70,7 @@
       </div>
       <div class="header_bottom">
         <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <nav class="navbar navbar-expand-xxl custom_nav-container ">
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="">
             </a>
@@ -79,7 +81,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
+              <div class="d-flex me-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <li class="nav-item active">
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -264,12 +266,12 @@
             <h4>
               BOOK <span>APPOINTMENT</span>
             </h4>
-            <div class="form-row ">
-              <div class="form-group col-lg-4">
+            <div class="row ">
+              <div class="form-group col-md-6">
                 <label for="inputPatientName">Patient Name </label>
                 <input type="text" class="form-control" id="inputPatientName" placeholder="">
               </div>
-              <div class="form-group col-lg-4">
+              <div class="form-group col-md-6">
                 <label for="inputDoctorName">Doctor's Name</label>
                 <select name="" class="form-control wide" id="inputDoctorName">
                   <option value="Normal distribution ">Normal distribution </option>
@@ -277,7 +279,7 @@
                   <option value="Normal distribution ">Normal distribution </option>
                 </select>
               </div>
-              <div class="form-group col-lg-4">
+              <div class="form-group col-md-6">
                 <label for="inputDepartmentName">Department's Name</label>
                 <select name="" class="form-control wide" id="inputDepartmentName">
                   <option value="Normal distribution ">Normal distribution </option>
@@ -285,17 +287,15 @@
                   <option value="Normal distribution ">Normal distribution </option>
                 </select>
               </div>
-            </div>
-            <div class="form-row ">
-              <div class="form-group col-lg-4">
+              <div class="form-group col-md-6">
                 <label for="inputPhone">Phone Number</label>
                 <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
               </div>
-              <div class="form-group col-lg-4">
+              <div class="form-group col-md-6">
                 <label for="inputSymptoms">Symptoms</label>
                 <input type="text" class="form-control" id="inputSymptoms" placeholder="">
               </div>
-              <div class="form-group col-lg-4">
+              <div class="form-group col-md-6">
                 <label for="inputDate">Choose Date </label>
                 <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
                   <input type="text" class="form-control" readonly>
@@ -705,13 +705,13 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +8801555666000
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope"></i>
                 <span>
-                  demo@gmail.com
+                  demo@hospital.com
                 </span>
               </a>
             </div>
@@ -828,7 +828,9 @@
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <!-- <script src="js/bootstrap.js"></script> --><!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
   <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
   <!-- owl slider -->
