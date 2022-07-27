@@ -107,7 +107,7 @@
                     @auth
                     <form method="POST" action="{{url('logout')}}" x-data="">
             @csrf
-            <button class="btn btn-transparent" type="submit">LogOut</button>
+            <button class="btn btn-transparent text-light" type="submit">LogOut</button>
         </form>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
