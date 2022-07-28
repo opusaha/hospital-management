@@ -41,7 +41,7 @@
 
 <body>
 
-  <div class="hero_area">
+  <div class="hero_area" id="home">
     <!-- header section strats -->
     <header class="header_section">
       <div class="header_top">
@@ -272,14 +272,6 @@
                 <input type="text" class="form-control" id="inputPatientName" placeholder="">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputDoctorName">Doctor's Name</label>
-                <select name="" class="form-control wide" id="inputDoctorName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                </select>
-              </div>
-              <div class="form-group col-md-6">
                 <label for="inputDepartmentName">Department's Name</label>
                 <select name="" class="form-control wide" id="inputDepartmentName">
                   <option value="Normal distribution ">Normal distribution </option>
@@ -288,8 +280,16 @@
                 </select>
               </div>
               <div class="form-group col-md-6">
+                <label for="inputDoctorName">Doctor's Name</label>
+                <select name="" class="form-control wide" id="inputDoctorName">
+                  <option value="Normal distribution ">Normal distribution </option>
+                  <option value="Normal distribution ">Normal distribution </option>
+                  <option value="Normal distribution ">Normal distribution </option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
                 <label for="inputPhone">Phone Number</label>
-                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                <input type="text" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputSymptoms">Symptoms</label>
@@ -736,22 +736,19 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
+                <a class="active" href="#home">
                   Home
                 </a>
-                <a href="about.html">
-                  About
+                <a href="#appointment">
+                Appointment
                 </a>
-                <a href="treatment.html">
-                  Treatment
-                </a>
-                <a href="doctor.html">
+                <a href="#doctor">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="#testimonial">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="#contact">
                   Contact us
                 </a>
               </div>
@@ -819,7 +816,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="https://html.design/">Me</a>
       </p>
     </div>
   </footer>
@@ -828,7 +825,8 @@
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <!-- <script src="js/bootstrap.js"></script> --><!-- JavaScript Bundle with Popper -->
+  <script src="js/bootstrap.js"></script>
+  <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
   <!-- nice select -->
