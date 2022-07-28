@@ -40,7 +40,6 @@
 </head>
 
 <body>
-
   <div class="hero_area">
     <!-- header section strats -->
     @include('home.header')
@@ -52,39 +51,24 @@
   <!-- book section -->
   @include('home.appointment')
   <!-- end book section -->
-
   <!-- about section -->
-
   @include('home.about')
-
   <!-- end about section -->
-
-
   <!-- treatment section -->
-
   @include('home.treatment')
-
   <!-- end treatment section -->
-
   <!-- team section -->
-
   @include('home.doctor')
-
   <!-- end team section -->
-
-
   <!-- client section -->
   @include('home.testimonial')
   <!-- end client section -->
-
   <!-- contact section -->
   @include('home.contact')
   <!-- end contact section -->
-
   <!-- info footer section -->
   @include('home.footer')
   <!-- info footer section -->
-
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
@@ -100,8 +84,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-
-
 </body>
-
 </html>
