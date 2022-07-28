@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Models\Doctor;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function(){return view('welcome');});
+Route::get('/', function(){
+    if(Auth::id()){
+        return redirect('home');
+    }else{
+    $doctor=Doctor::all();
+    return view('welcome',compact('doctor'));
+    }
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -28,6 +37,7 @@ Route::middleware([
 });
 
 Route::get('/home',[HomeController::class,'home']);
+Route::post('/appointment',[HomeController::class,'appointment']);
 
 
 

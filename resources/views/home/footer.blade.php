@@ -62,22 +62,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
+                <a class="active" href="#home">
                   Home
                 </a>
-                <a href="about.html">
-                  About
+                <a href="#appointment">
+                  Appointment
                 </a>
-                <a href="treatment.html">
+                <a href="#treatment">
                   Treatment
                 </a>
-                <a href="doctor.html">
+                <a href="#doctor">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="#testimonial">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="#contact">
                   Contact us
                 </a>
               </div>
