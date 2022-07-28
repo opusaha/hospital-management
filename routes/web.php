@@ -34,3 +34,4 @@ Route::get('/home',[HomeController::class,'home']);
 // ADMIN ROUTE
 
 Route::get('/add-doctor',[AdminController::class,'addDoctor']);
+Route::post('/store-doctor-data',[AdminController::class,'storeDoctorData']);
