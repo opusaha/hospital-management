@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <form action="{{url('/appointment')}}" method="post">
+        <form action="{{url('appointment')}}" method="POST">@csrf
           <h4>
             BOOK <span>APPOINTMENT</span>
           </h4>
           <div class="row ">
             <div class="form-group col-md-6">
               <label for="inputPatientName">Patient Name </label>
-              <input type="text" class="form-control" id="inputPatientName" placeholder="Patient Name" name="name">
+              <input type="text" class="form-control" id="inputPatientName" placeholder="Patient Name" name="patientName">
             </div>
             <div class="form-group col-md-6">
               <label for="inputDepartmentName">Specialty</label>
-              <select name="" class="form-control wide" id="inputDepartmentName">
+              <select class="form-control wide" id="inputDepartmentName" name="specialty">
                 <option value="" disabled selected hidden></option>
                 @foreach($doctor as $doctors)
                 <option value="{{$doctors->specialty}}" placeholder="Specialty">{{$doctors->specialty}}</option>
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group col-md-6">
               <label for="inputDoctorName">Doctor's Name</label>
-              <select name="" class="form-control wide" id="inputDoctorName">
+              <select class="form-control wide" id="inputDoctorName" name="doctor">
                 <option value="" disabled selected hidden></option>
                 @foreach($doctor as $doctors)
                 <option value="{{$doctors->name}}">{{$doctors->name}}</option>

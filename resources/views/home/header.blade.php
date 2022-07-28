@@ -59,6 +59,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
+              @if (Route::has('login'))
+              @auth
+              <li class="nav-item">
+                <a class="nav-link" href="{{url('my-appointment')}}">My Appointment</a>
+              </li>
+              @endauth
+              @endif
             </ul>
           </div>
           <div class="quote_btn-container">

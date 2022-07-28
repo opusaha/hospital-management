@@ -20,7 +20,7 @@ class HomeController extends Controller
         }
     }
     public function appointment(Request  $request){
-        $appointment= new Appointment;
+        $appointment= new appointment;
         $appointment->patientName=$request->patientName;
         $appointment->specialty=$request->specialty;
         $appointment->doctor=$request->doctor;
@@ -33,6 +33,18 @@ class HomeController extends Controller
             $appointment->user_id=Auth::user()->id;
         }
         $appointment->save();
+        return redirect()->back();
+    }
+    public function myAppointment(){
+        if(Auth::id()){
+        $userId=Auth::user()->id;
+        $appointment=appointment::where('user_id',$userId)->get();
+        return view('home.my_appointment',compact('appointment'));
+        }
+    }
+    public function cancelAppointment($id){
+        $data=Appointment::findOrFail($id);
+        $data->delete();
         return redirect()->back();
     }
 }

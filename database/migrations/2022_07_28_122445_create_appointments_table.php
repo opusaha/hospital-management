@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('doctor')->nullable();
             $table->string('patientPhone')->nullable();
             $table->string('date')->nullable();
+            $table->string('symptoms')->nullable();
             $table->string('message')->nullable();
             $table->string('status')->nullable();
             $table->string('user_id')->nullable();

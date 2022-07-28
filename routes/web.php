@@ -38,7 +38,8 @@ Route::middleware([
 
 Route::get('/home',[HomeController::class,'home']);
 Route::post('/appointment',[HomeController::class,'appointment']);
-
+Route::get('/my-appointment',[HomeController::class,'myAppointment']);
+Route::get('/cancel-appointment/{id}',[HomeController::class,'cancelAppointment']);
 
 
 // ADMIN ROUTE
