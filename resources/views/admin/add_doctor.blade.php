@@ -10,7 +10,7 @@
     @include ('admin.sidebar')
     <div class="container-fluid page-body-wrapper">
       @include ('admin.navbar')
-      @include('admin.body')
+
     </div>
   </div>
   @include('admin.script')
