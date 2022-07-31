@@ -36,6 +36,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+// USER ROUTE
+
 Route::get('/home',[HomeController::class,'home']);
 Route::post('/appointment',[HomeController::class,'appointment']);
 Route::get('/my-appointment',[HomeController::class,'myAppointment']);
@@ -45,4 +47,8 @@ Route::get('/cancel-appointment/{id}',[HomeController::class,'cancelAppointment'
 // ADMIN ROUTE
 
 Route::get('/add-doctor',[AdminController::class,'addDoctor']);
+Route::get('/all-doctor',[AdminController::class,'allDoctor']);
 Route::post('/store-doctor-data',[AdminController::class,'storeDoctorData']);
+Route::get('/appointment',[AdminController::class,'appointment']);
+Route::get('/approve/{id}',[AdminController::class,'approve']);
+Route::get('/cancel/{id}',[AdminController::class,'cancel']);

@@ -18273,7 +18273,6 @@ div.tagsinput {
     .table thead th i, .jsgrid .jsgrid-table thead th i {
       margin-left: 0.325rem; }
   .table th, .jsgrid .jsgrid-table th,
-  .table td,
   .jsgrid .jsgrid-table td {
     vertical-align: middle;
     font-size: 0.875rem;
