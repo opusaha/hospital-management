@@ -9,16 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    public function home(){
-        if(Auth::id()){
-            if (Auth::user()->type=="0") {
-                $doctor=Doctor::all();
-                return view('home',compact('doctor'));
-            }else{
-                return view('admin_dashboard');
-            }
-        }
-    }
     public function appointment(Request  $request){
         $appointment= new appointment;
         $appointment->patientName=$request->patientName;
