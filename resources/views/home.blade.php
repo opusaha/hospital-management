@@ -16,5 +16,6 @@
   @include('home.contact')
   @include('home.footer')
   @include('home.script')
+  @include('home.ajax')
 </body>
 </html>

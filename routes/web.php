@@ -43,6 +43,8 @@ Route::get('/home',[RegisterController::class,'home']);
 Route::post('/appointment',[HomeController::class,'appointment']);
 Route::get('/my-appointment',[HomeController::class,'myAppointment']);
 Route::get('/cancel-appointment/{id}',[HomeController::class,'cancelAppointment']);
+Route::post('/contact-us-form',[HomeController::class,'contactUsForm']);
+
 
 
 // ADMIN ROUTE
@@ -53,3 +55,4 @@ Route::post('/store-doctor-data',[AdminController::class,'storeDoctorData']);
 Route::get('/appointment',[AdminController::class,'appointment']);
 Route::get('/approve/{id}',[AdminController::class,'approve']);
 Route::get('/cancel/{id}',[AdminController::class,'cancel']);
+// Route::get('email',[HomeController::class,'email']);

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appointment;
-use App\Models\Doctor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactUs;
 
 class HomeController extends Controller
 {
@@ -37,4 +38,14 @@ class HomeController extends Controller
         $data->delete();
         return redirect()->back();
     }
+    public function contactUsForm(Request $request)
+    {
+        // dd($request->all());
+        Mail::to('sahaapo@gmail.com')->send(new ContactUs($request->name,$request->email,$request->phone,$request->content));
+        return redirect()->back();
+    }
+    // public function email()
+    // {
+    //     return view('email_template');
+    // }
 }

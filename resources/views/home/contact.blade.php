@@ -8,23 +8,22 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
+            <form action="{{url('/contact-us-form')}}" method="post">
+              @csrf
               <div>
-                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Full Name" name="name" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Phone Number" name="phone" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" name="content" />
               </div>
               <div class="btn_box">
-                <button>
-                  SEND
-                </button>
+                <button type="submit">SEND</button>
               </div>
             </form>
           </div>
